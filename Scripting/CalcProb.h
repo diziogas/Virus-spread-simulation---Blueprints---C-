@@ -19,5 +19,6 @@ class DIPLOMATIKI_2_API UCalcProb : public UBlueprintFunctionLibrary
 	static bool MultiplyFloats(float ChanceOfImmuneGettingInfected, float ChanceofInfectionPerHour, float DeltaSeconds,
 		bool IsImmune, bool IsOutside, bool IsWearingMask, bool HasSymptoms, bool OtherMask);
 
-
+	UFUNCTION(BlueprintCallable, Category = "MyMath")
+		static void UpdateCounters(int HealthyCounter, int VaccinatedCounter, int ImmuneCounter, int VaccunatedSum, int& HCounter, int& VacCounter, int& ICounter, int& VacSum);
 };

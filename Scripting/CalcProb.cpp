@@ -25,3 +25,13 @@ bool UCalcProb::MultiplyFloats(float ChanceOfImmuneGettingInfected, float Chance
 	//UE_LOG(LogTemp, Warning, TEXT("Result =  % f"), result);
 	return (result > random*100 );
 }
+
+
+void UCalcProb::UpdateCounters(int HealthyCounter, int VaccinatedCounter, int ImmuneCounter, int VaccunatedSum, int &HCounter, int &VacCounter, int &ICounter, int &VacSum ) {
+
+	HCounter= HealthyCounter - VaccinatedCounter;
+	ICounter = ImmuneCounter + VaccinatedCounter;
+	VacSum = VaccunatedSum + VaccinatedCounter;
+
+	
+}
