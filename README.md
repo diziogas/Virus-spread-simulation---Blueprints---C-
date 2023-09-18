@@ -1,3 +1,3 @@
-# thesis
+# thesis - Virus spread simulation
 
-Εδώ θα ανέβουν screenshots, απο το Visual Scripting System της Unreal Engine.
+This project is implemented in blueprints and some C++.Please read the pdf to get a better understanding. 
